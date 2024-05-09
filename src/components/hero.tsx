@@ -1,5 +1,9 @@
 import { Button } from './ui/button';
 import Carousel from './ui/carousel';
+import arrow from '../assets/icons/arrow.png';
+import model from '../assets/model.png';
+import rocket from '../assets/icons/rocket.png';
+import spark from '../assets/icons/spark.png';
 
 const Hero = () => {
   return (
@@ -16,13 +20,9 @@ const Hero = () => {
       <div className="w-full flex gap-10">
         <div className="w-2/3">
           <div className="w-[728px] relative mx-auto">
-            <img src="/model.png" alt="" className="mx-auto rounded-[40px]" />
+            <img src={model} alt="" className="mx-auto rounded-[40px]" />
             <div className="absolute bg-white rounded-[27.11px] p-[30px] flex flex-col gap-4 max-w-[265px] top-28 left-0 shadow-[#1E1E1E17] shadow-2xl">
-              <img
-                src="/spark.png"
-                alt=""
-                className="absolute -top-5 -left-2"
-              />
+              <img src={spark} alt="" className="absolute -top-5 -left-2" />
               <h1 className="text-[64px] font-medium leading-[76.8px] tracking-[-3%]">
                 40%
               </h1>
@@ -33,7 +33,7 @@ const Hero = () => {
             </div>
 
             <div className="absolute bg-white rounded-[111.54px] py-4 px-8 flex items-center gap-[14px] bottom-10 left-12 shadow-lg">
-              <img src="/rocket.png" alt="" />
+              <img src={rocket} alt="" />
               <div className="flex flex-col gap-[2px]">
                 <h1 className="text-[24px] font-bold leading-[32.78px]">
                   10 DAYS
@@ -60,7 +60,7 @@ const Hero = () => {
 
           <Button className="w-1/2 flex items-center gap-[12px]">
             <span>Explore More</span>
-            <img src="/arrow.png" alt="" />
+            <img src={arrow} alt="" />
           </Button>
         </div>
       </div>

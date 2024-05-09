@@ -1,9 +1,10 @@
 import Timer from '../components/timer';
+import submitted from '../assets/icons/submitted.png';
 
 const SuccessPage = () => {
   return (
     <div className="w-full lg:max-w-[718px] flex flex-col items-center">
-      <img src="/submitted.png" alt="Submitted" />
+      <img src={submitted} alt="Submitted" />
       <div className="flex flex-col gap-[16px] text-center">
         <span className="font-heading text-heading text-[36px]">
           Success Submitted

@@ -2,6 +2,8 @@ import { InputHTMLAttributes, forwardRef } from 'react';
 import { cn } from '../../lib/utils';
 import { FieldError } from 'react-hook-form';
 
+import warning from '../../assets/icons/warning.png';
+
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   error?: FieldError | undefined;
 }
@@ -22,7 +24,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
         />
         {error && (
           <div className="flex items-center gap-[7px]">
-            <img src="/warning.png" alt="" />
+            <img src={warning} alt="" />
             <span className="text-[#FF0808] text-[16px] font-medium leading-[21.86px]">
               {error.message}
             </span>

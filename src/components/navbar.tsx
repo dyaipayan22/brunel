@@ -1,5 +1,7 @@
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Button } from './ui/button';
+import logo from '../assets/logo.png';
+import close from '../assets/icons/close.png';
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -14,7 +16,7 @@ const Navbar = () => {
       }`}
     >
       <nav className="flex items-center justify-between">
-        <img src="/logo.png" alt="Logo" />
+        <img src={logo} alt="Logo" />
         {pathname === '/' ? (
           <div className="flex items-center gap-[16px]">
             <Button
@@ -27,7 +29,7 @@ const Navbar = () => {
           </div>
         ) : (
           <img
-            src="/close.png"
+            src={close}
             alt="Close"
             className="p-2 rounded-full border cursor-pointer"
             onClick={() => navigate('/')}

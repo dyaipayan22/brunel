@@ -1,4 +1,5 @@
 import Accordian from './ui/accordian';
+import union from '../assets/union.png';
 
 const FAQ = () => {
   return (
@@ -13,7 +14,7 @@ const FAQ = () => {
               Ask Questions
             </h1>
           </div>
-          <img src="/union.png" alt="" className="mt-10" />
+          <img src={union} alt="" className="mt-10" />
         </div>
       </div>
       <div className="flex-1 my-auto">

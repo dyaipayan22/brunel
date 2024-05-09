@@ -20,13 +20,11 @@ const Timer: FC<TimerProps> = ({ interval, redirectUrl }) => {
     return () => {
       clearInterval(timerId);
     };
-  }, []);
+  }, [timeInterval]);
 
   useEffect(() => {
-    if (redirectUrl) {
-      if (timeInterval === 0) {
-        navigate(redirectUrl);
-      }
+    if (redirectUrl && timeInterval === 0) {
+      navigate(redirectUrl);
     }
   }, [timeInterval, navigate, redirectUrl]);
 

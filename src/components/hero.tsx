@@ -14,37 +14,44 @@ const Hero = () => {
       </div>
 
       <div className="w-full flex gap-10">
-        <div className="w-2/3 relative">
-          <img src="/model.png" alt="" className="mx-auto rounded-[40px]" />
-          <div className="absolute bg-white rounded-[27.11px] p-[30px] flex flex-col gap-4 max-w-[265px] top-36 left-20 shadow-[#1E1E1E17] shadow-2xl">
-            <h1 className="text-[64px] font-medium leading-[76.8px] tracking-[-3%]">
-              40%
-            </h1>
-            <span>
-              Achieved reduction in project execution time by optimizing team
-              availability
-            </span>
-          </div>
-
-          <div className="absolute bg-white rounded-[111.54px] py-4 px-8 flex items-center gap-[14px] bottom-10 left-40 shadow-lg">
-            <img src="/rocket.png" alt="" />
-            <div className="flex flex-col gap-[2px]">
-              <h1 className="text-[24px] font-bold leading-[32.78px]">
-                10 DAYS
+        <div className="w-2/3">
+          <div className="w-[728px] relative mx-auto">
+            <img src="/model.png" alt="" className="mx-auto rounded-[40px]" />
+            <div className="absolute bg-white rounded-[27.11px] p-[30px] flex flex-col gap-4 max-w-[265px] top-28 left-0 shadow-[#1E1E1E17] shadow-2xl">
+              <img
+                src="/spark.png"
+                alt=""
+                className="absolute -top-5 -left-2"
+              />
+              <h1 className="text-[64px] font-medium leading-[76.8px] tracking-[-3%]">
+                40%
               </h1>
-              <span className="text-[#828282] text-[16px] leading-[20.8px]">
-                Staff Deployment
+              <span>
+                Achieved reduction in project execution time by optimizing team
+                availability
               </span>
             </div>
-          </div>
 
-          <div className="absolute -bottom-10 right-28 flex flex-col gap-[20px] bg-[#002E18] text-white rounded-[28.36px] p-[32px] max-w-[290px]">
-            <h1 className="text-[64px]">
-              $0.5 <span className="text-[22px] text-[#A6A3A0]">MILLION</span>
-            </h1>
-            <span className="text-[#CCCCCC]">
-              Reduced client expenses by saving on hiring and employee costs.
-            </span>
+            <div className="absolute bg-white rounded-[111.54px] py-4 px-8 flex items-center gap-[14px] bottom-10 left-12 shadow-lg">
+              <img src="/rocket.png" alt="" />
+              <div className="flex flex-col gap-[2px]">
+                <h1 className="text-[24px] font-bold leading-[32.78px]">
+                  10 DAYS
+                </h1>
+                <span className="text-[#828282] text-[16px] leading-[20.8px]">
+                  Staff Deployment
+                </span>
+              </div>
+            </div>
+
+            <div className="absolute -bottom-10 right-0 flex flex-col gap-[20px] bg-[#002E18] text-white rounded-[28.36px] p-[32px] max-w-[290px]">
+              <h1 className="text-[64px]">
+                $0.5 <span className="text-[22px] text-[#A6A3A0]">MILLION</span>
+              </h1>
+              <span className="text-[#CCCCCC]">
+                Reduced client expenses by saving on hiring and employee costs.
+              </span>
+            </div>
           </div>
         </div>
 

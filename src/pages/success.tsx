@@ -16,7 +16,7 @@ const SuccessPage = () => {
           your information and reach out to your shortly with updates
         </span>
       </div>
-      <Timer interval={5} />
+      <Timer interval={5} redirectUrl="/" />
     </div>
   );
 };

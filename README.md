@@ -1,6 +1,11 @@
 # Brunel
 
-Assignment for the postition of React JS Intern at Thence.
+Tech Stack used:
+
+- **React with Typescript**
+- **Tailwind CSS** for styling
+- **React Hook Form** for handling forms
+- **Zod** for validating inputs
 
 ## Demo
 
